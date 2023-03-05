@@ -4,39 +4,25 @@
   </section>
 
   <section class="row pt-4 p-1">
-    <div class="col-12 col-xl-8">
+    <div *ngIf="movies.length" class="col-12 col-xl-8">
 
-      <div class="row border-bottom mb-4 pb-3">
-        <div class="col-4" style="max-width: 200px;"><img src="https://images.savoysystems.co.uk/PCH/26310376.jpg"
-            alt="ALL QUIET ON THE WESTERN FRONT (2022)" style="width: 100%;"></div>
+      <div *ngFor="let movie of movies" class="row border-bottom mb-4 pb-3">
+        <div class="col-4" style="max-width: 200px;"><img src="{{'../assets/images/movie/'+movie.image}}"
+            alt="{{movie.name}}" style="width: 100%;"></div>
         <div class="col-6 col-xl-9 row">
-          <h4>ALL QUIET ON THE WESTERN FRONT (2022)</h4>
+          <h4>{{movie.name + ' ('+movie.year+')'}}</h4>
           <ul>
-            <li>Directed by Edward Berger</li>
-            <li>Starring Daniel Brühl, Anton Von Lucke, Devid Striesow, Albrecht Schuch, Sebastian Hulk, Edin Hasanovic,
+            <li class="my-2 text-end">
+              <h5 style="color: aqua;">{{movie.date}}</h5>
+            </li>
+            <li>Directed by: Edward Berger</li>
+            <li>Starring: Daniel Brühl, Anton Von Lucke, Devid Striesow, Albrecht Schuch, Sebastian Hulk, Edin Hasanovic,
               Felix Kammerer, Moritz Klaus</li>
             <li>exclusive 35mm short-engagement</li>
             <li>Germany, USA (2022)</li>
           </ul>
         </div>
       </div>
-
-
-      <div class="row border-bottom mb-4 pb-3">
-        <div class="col-4" style="max-width: 200px;"><img src="https://images.savoysystems.co.uk/PCH/26310376.jpg"
-            alt="ALL QUIET ON THE WESTERN FRONT (2022)" style="width: 100%;"></div>
-        <div class="col-6 col-xl-9 row">
-          <h4>ALL QUIET ON THE WESTERN FRONT (2022)</h4>
-          <ul>
-            <li>Directed by Edward Berger</li>
-            <li>Starring Daniel Brühl, Anton Von Lucke, Devid Striesow, Albrecht Schuch, Sebastian Hulk, Edin Hasanovic,
-              Felix Kammerer, Moritz Klaus</li>
-            <li>exclusive 35mm short-engagement</li>
-            <li>Germany, USA (2022)</li>
-          </ul>
-        </div>
-      </div>
-
     </div>
 
     <div class="col-xl-4 col-12">
