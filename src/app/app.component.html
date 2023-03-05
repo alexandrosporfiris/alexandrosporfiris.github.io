@@ -7,13 +7,13 @@
     <div *ngIf="movies.length" class="col-12 col-xl-8">
 
       <div *ngFor="let movie of movies" class="row border-bottom mb-4 pb-3">
-        <div class="col-4" style="max-width: 200px;"><img src="{{'../assets/images/movie/'+movie.image}}"
+        <div class="col-6 col-xl-4 justify-content-center" style="max-width: 200px;"><img src="{{'../assets/images/movie/'+movie.image}}"
             alt="{{movie.name}}" style="width: 100%;"></div>
         <div class="col-6 col-xl-9 row">
           <h4>{{movie.name + ' ('+movie.year+')'}}</h4>
           <ul>
             <li class="my-2 text-end">
-              <h5 style="color: aqua;">{{movie.date}}</h5>
+              <h4 style="color: aqua;">{{movie.date}}</h4>
             </li>
             <li>Directed by: Edward Berger</li>
             <li>Starring: Daniel Brühl, Anton Von Lucke, Devid Striesow, Albrecht Schuch, Sebastian Hulk, Edin Hasanovic,
