@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/scss/bootstrap";
+
+body{
+  background-color: black;
+  color: white;
+  // background: url(./assets/images/bg.jpg)  no-repeat center center;
+  //  -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: cover;
+}
+
+ul {
+  list-style-type: none;
+}
+
+@media only screen and (max-width: 600px) {
+  h4 {
+    font-size: medium;
+  }
+  ul {
+    font-size: small;
+  }
+}
