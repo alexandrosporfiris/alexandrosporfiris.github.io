@@ -15,11 +15,42 @@ ul {
   list-style-type: none;
 }
 
+.p-button {
+  background:rgba(0, 255, 255, 0.87) !important;
+  height: 40px !important;
+  color: white !important;
+}
+
+.p-inputtext{
+  height: 40px !important;
+  width: 350px !important;
+}
+
+.text-tickets{
+  text-align: right;
+  cursor: default;
+}
+
 @media only screen and (max-width: 600px) {
   h4 {
     font-size: small;
   }
   ul {
-    font-size: smaller;
+    font-size: small;
+  }
+
+  .p-button {
+    background:aqua !important;
+    height: 34px !important;
+  }
+
+  .p-inputtext{
+    height: 30px !important;
+    width: 80vw !important;
+  }
+
+  .text-tickets{
+    text-align: left;
+    font-size: small;
   }
 }

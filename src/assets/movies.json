@@ -1,20 +1,26 @@
 [
   {
     "date": "10/03/2023",
-    "name": "ALL QUIET ON THE WESTERN FRONT",
+    "name": "ALL QUIET ON THE WESTERN FRONT horror",
     "year": 2022,
-    "image": "movie1.jpg"
+    "image": "movie1.jpg",
+    "category": "horror",
+    "ticketsUrl": "https://www.viva.gr/tickets/cinema/sineak/"
   },
   {
     "date": "10/03/2023",
-    "name": "ALL QUIET ON THE WESTERN FRONT",
+    "name": "ALL QUIET ON THE WESTERN FRONT action",
     "year": 2022,
-    "image": "movie1.jpg"
+    "image": "movie1.jpg",
+    "category": "action",
+    "ticketsUrl": "https://www.viva.gr/tickets/cinema/sineak/"
   },
   {
     "date": "10/03/2023",
-    "name": "ALL QUIET ON THE WESTERN FRONT",
+    "name": "ALL QUIET ON THE WESTERN FRONT action",
     "year": 2022,
-    "image": "movie1.jpg"
+    "image": "movie1.jpg",
+    "category": "action",
+    "ticketsUrl": "https://www.viva.gr/tickets/cinema/sineak/"
   }
 ]
