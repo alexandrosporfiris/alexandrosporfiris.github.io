@@ -1,10 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/scss/bootstrap";
 
-body{
+body {
   background-color: black;
   color: white;
-  background: url(./assets/images/bg.gif)
+  background: url(./assets/images/bg.gif);
 }
 
 ul {
@@ -12,41 +12,81 @@ ul {
 }
 
 .p-button {
-  background:rgba(0, 255, 255, 0.87) !important;
+  background: rgba(0, 255, 255, 0.87) !important;
   height: 40px !important;
   color: white !important;
 }
 
-.p-inputtext{
+.p-inputtext {
   height: 40px !important;
   width: 350px !important;
 }
 
-.text-tickets{
+.text-tickets {
   text-align: right;
   cursor: default;
 }
 
+.social-bottom {
+  display: none;
+}
+
+.social-right {
+  display: block;
+}
+
+.movie-header {
+  cursor: default;
+}
+
+.movie-header:hover {
+  color: rgba(0, 255, 255, 0.87);
+}
+
+.movie-small {
+  display: none;
+}
+
+.movie-full {
+  display: flex;
+}
+
 @media only screen and (max-width: 600px) {
   h4 {
-    font-size: small;
+    font-size: 14px;
   }
   ul {
     font-size: small;
   }
 
   .p-button {
-    background:aqua !important;
+    background: aqua !important;
     height: 34px !important;
   }
 
-  .p-inputtext{
+  .p-inputtext {
     height: 30px !important;
     width: 80vw !important;
   }
 
-  .text-tickets{
+  .text-tickets {
     text-align: left;
     font-size: small;
+  }
+
+  .social-right {
+    display: none;
+  }
+
+  .social-bottom {
+    display: block;
+  }
+
+  .movie-small {
+    display: flex;
+  }
+
+  .movie-full {
+    display: none;
   }
 }

@@ -8,10 +8,20 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {DropdownModule} from 'primeng/dropdown';
 import {AutoCompleteModule} from 'primeng/autocomplete';
 import {ButtonModule} from 'primeng/button';
+import { SideCategoriesComponent } from './side-categories/side-categories.component';
+import { HeaderComponent } from './header/header.component';
+import { HomeComponent } from './home/home.component';
+import { FooterComponent } from './footer/footer.component';
+import { MoviePageComponent } from './movie-page/movie-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SideCategoriesComponent,
+    HeaderComponent,
+    HomeComponent,
+    FooterComponent,
+    MoviePageComponent
   ],
   imports: [
     BrowserModule,

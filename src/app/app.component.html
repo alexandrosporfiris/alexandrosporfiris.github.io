@@ -1,63 +1,9 @@
 <div class="container bg-black">
-  <section>
-    <div class="col-12 mb-4"><img src="../assets/images/banner.jpg" width="100%"></div>
-  </section>
 
-  <p-autoComplete [suggestions]="filteredMovies" placeholder="Αναζήτηση Ταινίας" (completeMethod)="filterMovies($event)"
-    field="name" [dropdown]="true">
-    <ng-template let-movie pTemplate="item">
-      <div class="flex align-items-center">
-        <img src="{{'../assets/images/movie/'+movie.image}}" style="width: 100px" />
-        <span> {{movie.name}}</span>
-      </div>
-    </ng-template>
-  </p-autoComplete>
+  <app-header></app-header>
 
-  <section class="row pt-4 p-1">
-    <div *ngIf="movies.length" class="col-12 col-xl-8">
+  <router-outlet></router-outlet>
 
-      <div *ngFor="let movie of movies" class="row border-bottom mb-4 pb-3">
-        <div class="col-6 col-xl-4 justify-content-center" style="max-width: 200px;"><img
-            src="{{'../assets/images/movie/'+movie.image}}" alt="{{movie.name}}" style="width: 100%;"></div>
-        <div class="col-6 col-xl-9 row">
-          <h4>{{movie.name + ' ('+movie.year+')'}}</h4>
-          <ul>
-            <div class="row">
-            <li class="col-xl-6 col-12 text-start">
-              <h4 style="color: rgba(0, 255, 255, 0.87);">{{movie.date}}</h4>
-            </li>
-            <li (click)="tickets(movie.ticketsUrl)" class="my-3 col-xl-6 col-12 text-tickets">
-             <span class="p-2 rounded" style="background-color: rgb(81, 128, 28);"> <i class="pi pi-ticket" style="vertical-align: -1.5px;"></i> Εισιτήρια</span>
-            </li>
-            </div>
+  <app-footer></app-footer>
 
-            <li>Directed by: Edward Berger</li>
-            <li>Starring: Daniel Brühl, Anton Von Lucke, Devid Striesow, Albrecht Schuch, Sebastian Hulk, Edin
-              Hasanovic,
-              Felix Kammerer, Moritz Klaus</li>
-            <li>exclusive 35mm short-engagement</li>
-            <li>Germany, USA (2022)</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-xl-4 col-12">
-
-      <div class="pb-2"><img width="100%" src="../assets/images/categories/ANIMATION.jpg"></div>
-      <div class="pb-2"><img width="100%" src="../assets/images/categories/BACK TO THE 80s.jpg"></div>
-      <div class="pb-2"><img width="100%" src="../assets/images/categories/BAD MOVIE NIGHTS.jpg"></div>
-      <div class="pb-2"><img width="100%" src="../assets/images/categories/CLASSIC ATTITTUDE.jpg"></div>
-      <div class="pb-2"><img width="100%" src="../assets/images/categories/DARIO ARGENTO.jpg"></div>
-      <div class="pb-2"><img width="100%" src="../assets/images/categories/GREEK CINEMA.jpg"></div>
-      <div class="pb-2"><img width="100%" src="../assets/images/categories/HIDDEN GEMS.jpg"></div>
-      <div class="pb-2"><img width="100%" src="../assets/images/categories/HOLLYWOOD MISFITS.jpg"></div>
-      <div class="pb-2"><img width="100%" src="../assets/images/categories/HORROR.jpg"></div>
-      <div class="pb-2"><img width="100%" src="../assets/images/categories/JOHN CARPENTER.jpg"></div>
-      <div class="pb-2"><img width="100%" src="../assets/images/categories/NOIR.jpg"></div>
-      <div class="pb-2"><img width="100%" src="../assets/images/categories/ROCKY.jpg"></div>
-      <div class="pb-2"><img width="100%" src="../assets/images/categories/SPAGHETTI.jpg"></div>
-      <div class="pb-2"><img width="100%" src="../assets/images/categories/TOO EXTREME.jpg"></div>
-    </div>
-  </section>
 </div>

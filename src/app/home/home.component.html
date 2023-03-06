@@ -1,0 +1,34 @@
+
+<section class="row pt-4 p-1">
+  <h4 class="mb-2">Επόμενες Προβολές</h4>
+  <div *ngIf="movies.length" class="col-12 col-xl-8">
+    <div *ngFor="let movie of movies" class="row border-bottom mb-4 pb-3">
+      <div (click)="goToMoviePage(movie)" class="col-6 col-xl-4 justify-content-center" style="max-width: 200px;"><img
+          src="{{movie.imageUrl}}" alt="{{movie.name}}" style="width: 100%;"></div>
+      <div class="col-6 col-xl-9 row">
+        <h4 class="movie-header" (click)="goToMoviePage(movie)" >{{movie.name + ' ('+movie.year+')'}}</h4>
+        <ul>
+          <div class="row">
+            <li class="col-xl-6 col-12 text-start">
+              <h4 style="color: rgba(0, 255, 255, 0.87);">{{movie.date}}</h4>
+            </li>
+            <li (click)="tickets(movie.ticketsUrl)" class="my-3 col-xl-6 col-12 text-tickets">
+              <span class="p-2 rounded" style="background-color: rgb(81, 128, 28);"> <i class="pi pi-ticket"
+                  style="vertical-align: -1.5px;"></i> Εισιτήρια</span>
+            </li>
+          </div>
+
+          <li>Directed by: Edward Berger</li>
+          <li>Starring: Daniel Brühl, Anton Von Lucke, Devid Striesow, Albrecht Schuch, Sebastian Hulk, Edin
+            Hasanovic,
+            Felix Kammerer, Moritz Klaus</li>
+          <li>exclusive 35mm short-engagement</li>
+          <li>Germany, USA (2022)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <app-side-categories class="col-xl-4 col-12"></app-side-categories>
+
+</section>

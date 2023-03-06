@@ -1,1 +1,78 @@
-["horror","action"]
+[
+  {
+    "name": "70s",
+    "image": "70s.jpg"
+  },
+  {
+    "name": "ANIMATION",
+    "image": "ANIMATION.jpg"
+  },
+  {
+    "name": "AVANT GARDE",
+    "image": "AVANT GARDE.jpg"
+  },
+  {
+    "name": "BACK TO THE 80s",
+    "image": "BACK TO THE 80s.jpg"
+  },
+  {
+    "name": "BAD MOVIE NIGHTS",
+    "image": "BAD MOVIE NIGHTS.jpg"
+  },
+  {
+    "name": "CLASSIC ATTITTUDE",
+    "image": "CLASSIC ATTITTUDE.jpg"
+  },
+  {
+    "name": "DARIO ARGENTO",
+    "image": "DARIO ARGENTO.jpg"
+  },
+  {
+    "name": "EXPLOITATION",
+    "image": "EXPLOITATION.jpg"
+  },
+  {
+    "name": "GREEK CINEMA",
+    "image": "GREEK CINEMA.jpg"
+  },
+  {
+    "name": "HIDDEN GEMS",
+    "image": "HIDDEN GEMS.jpg"
+  },
+  {
+    "name": "HOLLYWOOD MISFITS",
+    "image": "HOLLYWOOD MISFITS.jpg"
+  },
+  {
+    "name": "HORROR",
+    "image": "HORROR.jpg"
+  },
+  {
+    "name": "JOHN CARPENTER",
+    "image": "JOHN CARPENTER.jpg"
+  },
+  {
+    "name": "MUSICALS",
+    "image": "MUSICALS.jpg"
+  },
+  {
+    "name": "NOIR",
+    "image": "NOIR.jpg"
+  },
+  {
+    "name": "ROCKY",
+    "image": "ROCKY.jpg"
+  },
+  {
+    "name": "SCI FI",
+    "image": "SCI FI.jpg"
+  },
+  {
+    "name": "SPAGHETTI",
+    "image": "SPAGHETTI.jpg"
+  },
+  {
+    "name": "TOO EXTREME",
+    "image": "TOO EXTREME.jpg"
+  }
+]

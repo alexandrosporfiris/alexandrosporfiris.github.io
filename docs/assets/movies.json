@@ -1,26 +1,41 @@
 [
   {
+    "id": 1,
     "date": "10/03/2023",
-    "name": "ALL QUIET ON THE WESTERN FRONT horror",
+    "name": "ALL QUIET ON THE WESTERN FRONT",
     "year": 2022,
-    "image": "movie1.jpg",
+    "imageUrl": "https://www.linkpicture.com/q/movie1.jpg",
     "category": "horror",
-    "ticketsUrl": "https://www.viva.gr/tickets/cinema/sineak/"
+    "director":"Edward Berger",
+    "description":"All Quiet on the Western Front tells the gripping story of a young German soldier on the Western Front of World War I. Paul and his comrades experience first-hand how the initial euphoria of war turns into desperation and fear as they fight for their lives, and each other, in the trenches. The film from director Edward Berger is based on the world renowned bestseller of the same name by Erich Maria Remarque.",
+    "starring": "Daniel Brühl, Anton Von Lucke, Devid Striesow, Albrecht Schuch, Sebastian Hulk, Edin Hasanovic,Felix Kammerer, Moritz Klaus",
+    "ticketsUrl": "https://www.viva.gr/tickets/cinema/sineak/",
+    "trailerUrl": "https://www.youtube.com/embed/hf8EYbVxtCY"
   },
   {
+    "id": 2,
     "date": "10/03/2023",
-    "name": "ALL QUIET ON THE WESTERN FRONT action",
+    "name": "GENTLEMEN PREFER BLONDES",
     "year": 2022,
-    "image": "movie1.jpg",
+    "imageUrl": "https://www.linkpicture.com/q/GENTLEMEN-PREFER-BLONDES.jpg",
     "category": "action",
-    "ticketsUrl": "https://www.viva.gr/tickets/cinema/sineak/"
+    "director":"Howard Hawks",
+    "description":"Lorelei Lee (Marilyn Monroe) is a beautiful showgirl engaged to be married to the wealthy Gus Esmond (Tommy Noonan), much to the disapproval of Gus' rich father, Esmond Sr., who thinks that Lorelei is just after his money. When Lorelei goes on a cruise accompanied only by her best friend, Dorothy Shaw (Jane Russell), Esmond Sr. hires Ernie Malone (Elliott Reid), a private detective, to follow her and report any questionable behavior that would disqualify her from the marriage.",
+    "starring": "Jane Russell, Marilyn Monroe",
+    "ticketsUrl": "https://www.viva.gr/tickets/cinema/sineak/",
+    "trailerUrl": "https://www.youtube.com/embed/ur9GKLl8v4U"
   },
   {
-    "date": "10/03/2023",
-    "name": "ALL QUIET ON THE WESTERN FRONT action",
+    "id": 3,
+    "date": "4/03/2023",
+    "name": "MIAMI VICE",
     "year": 2022,
-    "image": "movie1.jpg",
+    "imageUrl": "https://www.linkpicture.com/q/MIAMI-VICE.jpg",
     "category": "action",
-    "ticketsUrl": "https://www.viva.gr/tickets/cinema/sineak/"
+    "director":"Michael Mann",
+    "description":"A case involving drug lords and murder in South Florida takes a personal turn for undercover detectives Sonny Crockett (Colin Farrell) and Ricardo Tubbs (Jamie Foxx). Unorthodox Crockett gets involved romantically with the Chinese-Cuban wife of a trafficker of arms and drugs, while Tubbs deals with an assault on those he loves.",
+    "starring": "Jamie Foxx, Colin Farrell, Gong Li, Naomie Harris, Ciarán Hinds, Justin Theroux",
+    "ticketsUrl": "https://www.viva.gr/tickets/cinema/sineak/",
+    "trailerUrl": "https://www.youtube.com/embed/6WCKJ7KaIZY"
   }
 ]

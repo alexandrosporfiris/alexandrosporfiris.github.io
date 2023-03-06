@@ -1,0 +1,80 @@
+<section class="pt-4 p-1">
+  <div *ngIf="movie" class="col-12">
+
+
+    <div class="row mb-4 pb-3 movie-full justify-content-around">
+      <div class="col-6 justify-content-center" style="max-width: 600px;"><img
+           src="{{movie.imageUrl}}" alt="{{movie.name}}" style="width: 100%;"></div>
+
+      <div class="col-6">
+        <h4 class="mb-4">{{movie.name + ' ('+movie.year+')'}}</h4>
+        <ul class="p-0">
+          <div class="row">
+            <li class="col-xl-6 col-12 text-start">
+              <h4 style="color: rgba(0, 255, 255, 0.87);">{{movie.date}}</h4>
+            </li>
+            <li *ngIf="upcoming" (click)="tickets(movie.ticketsUrl)" class="my-3 col-xl-6 col-12 text-tickets">
+              <span class="p-2 rounded" style="background-color: rgb(81, 128, 28);"> <i class="pi pi-ticket"
+                  style="vertical-align: -1.5px;"></i> Εισιτήρια</span>
+            </li>
+          </div>
+
+          <li>Σκηνοθεσία: {{movie.director}}</li>
+          <li>Πρωταγωνιστούν: {{movie.starring}}</li>
+          <li class="mt-4">
+            {{movie.description}}
+          </li>
+
+          <div class="mt-4">
+            <iframe class="col-12" style="height:320px"
+              [src]="sanitizer.bypassSecurityTrustResourceUrl(movie.trailerUrl)" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="row mb-4 pb-3 movie-small">
+      <div class="col-12">
+        <h4 class="mb-4">{{movie.name + ' ('+movie.year+')'}}</h4>
+        <ul class="p-0">
+
+          <div class="row mb-3">
+            <div class="col-6 text-start">
+              <h4 style="color: rgba(0, 255, 255, 0.87);">{{movie.date}}</h4>
+            </div>
+            <div *ngIf="upcoming" (click)="tickets(movie.ticketsUrl)" class="col-6 text-end">
+              <span class="p-2 rounded" style="background-color: rgb(81, 128, 28);"> <i class="pi pi-ticket"
+                  style="vertical-align: -1.5px;"></i> Εισιτήρια</span>
+            </div>
+          </div>
+
+
+          <div class="col-12 justify-content-center" style="max-width: 450px;"><img
+               src="{{movie.imageUrl}}" alt="{{movie.name}}" style="width: 100%;"></div>
+
+          <li>Σκηνοθεσία: {{movie.director}}</li>
+          <li>Πρωταγωνιστούν: {{movie.starring}}</li>
+
+          <li class="mt-4">
+            {{movie.description}}
+          </li>
+        </ul>
+      </div>
+
+      <div class="mt-4">
+        <iframe class="col-12" style="height:320px" [src]="sanitizer.bypassSecurityTrustResourceUrl(movie.trailerUrl)"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+</section>
