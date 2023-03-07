@@ -88,6 +88,7 @@ ul {
   }
 }
 
+
 @media only screen and (max-width: 774px) {
   // h4 {
   //   font-size: 14px;
@@ -132,6 +133,15 @@ ul {
 
   .movie-full {
     display: none;
+  }
+
+
+  @media only screen and (min-width: 600px) and (max-width: 768px) {
+    .p-inputtext {
+      height: 30px !important;
+      width: 62vw !important;
+    }
+
   }
 
 
