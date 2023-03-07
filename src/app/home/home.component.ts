@@ -9,21 +9,24 @@ import * as moment from 'moment';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
+  loading = true;
   private _moviesJsonURL = '../assets/movies.json';
   public movies: any = [];
 
   filteredMovies: any = [];
 
   constructor(private http: HttpClient, private router: Router) {
+    this.loading = true;
     this.http.get(this._moviesJsonURL).subscribe((data: any) => {
       data.forEach((movie: any) => {
         let dateString = movie.date.split('/');
         let date = new Date(dateString[2], dateString[1] - 1, dateString[0]);
 
         if (date.getTime() > new Date().getTime()) {
-           this.movies.push(movie);
+          this.movies.push(movie);
         }
       });
+      this.loading = false;
     });
   }
   ngOnInit(): void {}

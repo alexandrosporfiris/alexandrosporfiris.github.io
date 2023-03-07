@@ -9,11 +9,13 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./movie-page.component.scss'],
 })
 export class MoviePageComponent implements OnInit {
+  loading = true;
   private _moviesJsonURL = '../assets/movies.json';
   movie: any;
   upcoming = false;
 
   constructor(private http: HttpClient, private route: ActivatedRoute, public sanitizer:DomSanitizer) {
+    this.loading = true;
     this.http.get(this._moviesJsonURL).subscribe((data: any) => {
       this.movie = data.find((item: any) => {
         return (item.id == this.route.snapshot.queryParamMap.get('id'));
@@ -24,6 +26,7 @@ export class MoviePageComponent implements OnInit {
       if (date.getTime() > new Date().getTime()) {
         this.upcoming = true;
       }
+      this.loading = false;
     });
   }
 

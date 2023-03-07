@@ -1,4 +1,5 @@
-<section class="row pt-4 p-1">
+<div *ngIf="loading" style="height: 90vh;"><img src="../../assets/images/logo.png" class="rotate" width="70"height="70" /></div>
+<section *ngIf="!loading" class="row pt-4 p-1">
   <div *ngIf="movies.length" class="col-12 col-xl-8">
     <h4 class="mb-4 col-12 text-center">Επόμενες Προβολές</h4>
     <div *ngFor="let movie of movies" class="row border-bottom mb-4 pb-3">

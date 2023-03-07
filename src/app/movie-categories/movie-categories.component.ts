@@ -8,6 +8,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./movie-categories.component.scss'],
 })
 export class MovieCategoriesComponent implements OnInit {
+  loading = true;
   private _moviesJsonURL = '../assets/movies.json';
   public movies: any = [];
 
@@ -15,6 +16,7 @@ export class MovieCategoriesComponent implements OnInit {
   categoryName: any = null;
 
   constructor(private http: HttpClient, private router: Router,private route: ActivatedRoute) {
+    this.loading = true;
     this.categoryName = this.route.snapshot.queryParamMap.get('name');
 
     this.http.get(this._moviesJsonURL).subscribe((data: any) => {
@@ -24,6 +26,7 @@ export class MovieCategoriesComponent implements OnInit {
           this.movies.push(movie);
         }
       });
+      this.loading = false;
     });
   }
   ngOnInit(): void {}

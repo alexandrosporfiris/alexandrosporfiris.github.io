@@ -1,4 +1,5 @@
-<section class="pt-4 p-1">
+<div *ngIf="loading" style="height: 90vh;"><img src="../../assets/images/logo.png" class="rotate" width="70"height="70" /></div>
+<section  *ngIf="!loading" class="pt-4 p-1">
   <div *ngIf="movie" class="col-12">
 
 
