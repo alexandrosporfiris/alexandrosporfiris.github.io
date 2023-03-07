@@ -1,6 +1,6 @@
 <section class="row pt-4 p-1">
   <div *ngIf="movies.length" class="col-12 col-xl-8">
-    <h4 class="mb-4 col-12 text-center">Επόμενες Προβολές</h4>
+    <h4 class="mb-4 col-12 text-center">{{categoryName}}</h4>
     <div *ngFor="let movie of movies" class="row border-bottom mb-4 pb-3">
       <div (click)="goToMoviePage(movie)" class="col-6 col-xl-4 justify-content-center" style="max-width: 200px;"><img
           src="{{movie.imageUrl}}" alt="{{movie.name}}" style="width: 100%;"></div>
@@ -17,7 +17,6 @@
             </li>
           </div>
 
-          <li>Κατηγορία: {{movie.category}}</li>
           <li>Σκηνοθεσία: {{movie.director}}</li>
           <li>Πρωταγωνιστούν: {{movie.starring}}</li>
         </ul>
@@ -26,7 +25,7 @@
   </div>
 
   <div *ngIf="!movies.length" class="col-12 col-xl-8 my-4 text-center">
-    <h4>Δεν υπάρχουν προγραματισμένες προβολές</h4>
+    <h4>Δεν υπάρχουν ακόμα ταινίες στην κατηγορία: {{categoryName}}</h4>
   </div>
 
   <app-side-categories class="col-xl-4 col-12"></app-side-categories>

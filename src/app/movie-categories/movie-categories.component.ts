@@ -1,27 +1,27 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import * as moment from 'moment';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
+  selector: 'app-movie-categories',
+  templateUrl: './movie-categories.component.html',
+  styleUrls: ['./movie-categories.component.scss'],
 })
-export class HomeComponent implements OnInit {
+export class MovieCategoriesComponent implements OnInit {
   private _moviesJsonURL = '../assets/movies.json';
   public movies: any = [];
 
   filteredMovies: any = [];
+  categoryName: any = null;
 
-  constructor(private http: HttpClient, private router: Router) {
+  constructor(private http: HttpClient, private router: Router,private route: ActivatedRoute) {
+    this.categoryName = this.route.snapshot.queryParamMap.get('name');
+
     this.http.get(this._moviesJsonURL).subscribe((data: any) => {
       data.forEach((movie: any) => {
-        let dateString = movie.date.split('/');
-        let date = new Date(dateString[2], dateString[1] - 1, dateString[0]);
 
-        if (date.getTime() > new Date().getTime()) {
-           this.movies.push(movie);
+        if (movie.category.replace(/\s/g, '').toLowerCase() ==   this.categoryName.replace(/\s/g, '').toLowerCase()) {
+          this.movies.push(movie);
         }
       });
     });

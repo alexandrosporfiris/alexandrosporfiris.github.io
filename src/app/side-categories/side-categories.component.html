@@ -1,4 +1,5 @@
 <section>
-  <div *ngFor="let category of categories" class="pb-2"><img width="100%"
+  <h4 class="mb-4 col-12 text-center">Κατηγορίες</h4>
+  <div *ngFor="let category of categories" (click)="goToCategoryPage(category)" class="pb-2"><img width="100%"
       src="{{'../assets/images/categories/'+category.image}}" alt="{{category.name}}"></div>
 </section>

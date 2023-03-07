@@ -52,11 +52,18 @@ ul {
 }
 
 @media only screen and (max-width: 600px) {
-  h4 {
-    font-size: 14px;
+  // h4 {
+  //   font-size: 14px;
+  // }
+  // ul {
+  //   font-size: small;
+  // }
+  .home-header {
+    font-size: 15px;
   }
-  ul {
-    font-size: small;
+
+  .home-text {
+    font-size: 14px;
   }
 
   .p-button {
@@ -71,7 +78,7 @@ ul {
 
   .text-tickets {
     text-align: left;
-    font-size: small;
+    // font-size: small;
   }
 
   .social-right {

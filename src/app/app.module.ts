@@ -13,6 +13,7 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { MoviePageComponent } from './movie-page/movie-page.component';
+import { MovieCategoriesComponent } from './movie-categories/movie-categories.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { MoviePageComponent } from './movie-page/movie-page.component';
     HeaderComponent,
     HomeComponent,
     FooterComponent,
-    MoviePageComponent
+    MoviePageComponent,
+    MovieCategoriesComponent
   ],
   imports: [
     BrowserModule,
